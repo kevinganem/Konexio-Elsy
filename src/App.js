@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import Steps from "./components/Steps.js";
+import Box from "./components/Box.js";
 import "./App.css";
 import "./styles/global.css";
 
@@ -19,7 +19,14 @@ class App extends React.Component {
           <p>Heart : {heartMin}</p>
           <p>Temperature : {tempMin}</p>
           <p>Steps : {stepsMin}</p>
-          <Steps />
+          {/* WATER BOX */}
+          <Box icon="local_drink" color="#3A85FF" value="1.5" unit="L" />
+          {/* STEPS BOX */}
+          <Box icon="directions_walk" color="black" value="3000" unit="steps" />
+          {/* HEART BOX */}
+          <Box icon="favorite" color="red" value="120" unit="bpm" />
+          {/* TEMPERATURE BOX */}
+          <Box icon="wb_sunny" color="yellow" value="-10" unit="°C" />
         </div>
       </div>
     );
