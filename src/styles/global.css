@@ -1,8 +1,8 @@
-.boxEven {
+.box:nth-child(even) {
   background-color: #cccccc;
 }
 
-.boxOdd {
+.box:nth-child(odd) {
   background-color: #aaaaaa;
 }
 
