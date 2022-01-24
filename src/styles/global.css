@@ -1,0 +1,13 @@
+.boxEven {
+  background-color: #cccccc;
+}
+
+.boxOdd {
+  background-color: #aaaaaa;
+}
+
+.box {
+  height: 190px;
+  padding: 8px;
+  text-align: center;
+}
