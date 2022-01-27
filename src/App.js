@@ -19,7 +19,7 @@ class App extends React.Component {
     this.changeTemp = this.changeTemp.bind(this);
 
     this.state = {
-      water: 0,
+      water: 1.5,
       heart: 120,
       temperature: -10,
       steps: 3000,
@@ -63,9 +63,13 @@ class App extends React.Component {
         <div className="row">
           {/* WATER BOX */}
           <Box
+            value={this.calculWater(
+              this.state.temperature,
+              this.state.heart,
+              this.state.steps
+            )}
             icon="local_drink"
             color="#3A85FF"
-            value="1.5"
             unit="L"
             showSlider="false"
           />
