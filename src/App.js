@@ -62,7 +62,13 @@ class App extends React.Component {
       <div className="container-fluid">
         <div className="row">
           {/* WATER BOX */}
-          <Box icon="local_drink" color="#3A85FF" value="1.5" unit="L" />
+          <Box
+            icon="local_drink"
+            color="#3A85FF"
+            value="1.5"
+            unit="L"
+            showSlider="false"
+          />
 
           {/* STEPS BOX */}
           <Box
